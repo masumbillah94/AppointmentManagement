@@ -6,7 +6,6 @@ namespace Application.Services
 {
     public class PasswordHasher : IPasswordHasher
     {
-        // This should be a fixed secret key (need to keep it secret, store securely but for demo purpose I keedp It here)
         private static readonly string SecretKey = "qIeJsWzAxCnHyRmFtGbVdPoKlNuMqRsX";
         public string HashPassword(string userName, string plainPassword)
         {

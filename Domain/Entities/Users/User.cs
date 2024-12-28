@@ -6,10 +6,6 @@ namespace Domain.Entities.Users
 {
     public class User:BaseEntity<long>
     {
-        //[Key]
-        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-       // public int UserID { get; set; } 
-
         [Required]
         [MaxLength(100)]
         public string Username { get; set; } = string.Empty;
