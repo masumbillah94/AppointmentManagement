@@ -26,7 +26,8 @@ namespace Application.Appointments.Handlers
             try
             {
                 var appointment = await _repositoryFacade.AppointmentRepo.GetByIdAsync(request.Id);
-                //}
+
+               
                 response.SuccessResponse(appointment);
                 return response;
             }
